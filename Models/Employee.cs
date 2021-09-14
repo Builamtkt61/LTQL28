@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
 namespace LTQL28.Models
 {
-    public class Account
+    public class Employee : Person
     {
-        [Key]
-        public int MyProperty { get; set; }
+        public string Company { get; set; }
+        public string Address { get; set; }
     }
 }
